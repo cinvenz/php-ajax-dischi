@@ -1,8 +1,8 @@
 new Vue({
   el: "#app",
   data: {
-    disc: [],
-    urlApi: "http://localhost:8888/php-ajax-dischi/api/discs.php",
+    discs: [],
+    urlApi: "http://localhost:8888/php-ajax-dischi/api.php",
   },
   created() {
     axios.get(this.urlApi).then((res) => {

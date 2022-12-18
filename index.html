@@ -18,14 +18,12 @@
   </head>
   <body>
     <main id="app">
-      <div v-for="objDisc in discs" :key="objMovie.title">
+      <div v-for="objDisc in discs" :key="objDisc.title">
         <div class="">
           <img :src="objDisc.poster" :alt="objDisc.title" class="img-fluid" />
-          <h2 class="name fw-bold text-uppercase pt-3 pb-2">
-            {{ objDisc.title }}
-          </h2>
-          <div class="author">{{ objDiscauthor }}</div>
-          <div class="anno">{{ objDisc.year }}</div>
+          <h2 class="">{{ objDisc.title }}</h2>
+          <div class="">{{ objDisc.author }}</div>
+          <div class="">{{ objDisc.year }}</div>
         </div>
       </div>
     </main>
