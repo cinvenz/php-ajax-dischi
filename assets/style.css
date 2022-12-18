@@ -1,0 +1,36 @@
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 0.8rem;
+}
+header {
+  background-color: #2e3a46;
+}
+.name {
+  font-size: 1rem;
+}
+.select-genres {
+  width: 5rem;
+}
+#app {
+  background-color: #1e2d3b;
+}
+.container-cards {
+  max-width: 900px;
+  background-color: #1e2d3b;
+  margin: auto !important;
+}
+.container-card {
+  background-color: #2e3a46;
+  color: white;
+  height: 17.5rem;
+}
+h2 {
+  font-size: 1rem;
+}
+.author {
+  color: gray;
+  font-size: 1rem;
+}
+.anno {
+  color: gray;
+}
