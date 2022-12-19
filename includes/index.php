@@ -19,17 +19,17 @@ include __DIR__ . '/db/data.php' ?>
     <main id="app">
 
         <div class="row row-cols-3 g-4 container-cards py-5">
-            <?php foreach ($arrDiscs as $disc) : ?>
+            <?php foreach ($arrDiscs as $discs) { ?>
                 <div class="contents text-center container-card p-3 mb-1">
-                    <img :src="<?= $disc['poster'] ?>" :alt="<?= $disc['author'] ?>" class="img-fluid" />
+                    <img :src="<?= $discs['poster'] ?>" :alt="<?= $discs['author'] ?>" class="img-fluid" />
                     <h2 class="name fw-bold text-uppercase pt-3 pb-2">
-                        <?= strtoupper($disc['title']) ?>
+                        <?= strtoupper($discs['title']) ?>
                     </h2>
-                    <div class="author"><?= $disc['author'] ?></div>
-                    <div class="anno"><?= $disc['genre'] ?></div>
-                </div>
+                    <div class="author"><?= $discs['author'] ?></div>
+                    <div class="anno"><?= $discs['genre'] ?></div>
+                </div><?
 
-            <?php endforeach; ?>
+                    } ?>
         </div>
     </main>
 
